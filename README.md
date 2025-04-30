@@ -1,9 +1,10 @@
-#📝 To-Do Application
+# 📝 To-Do Application
+
 A simple and efficient To-Do List application built using modern web technologies. This app allows users to add, edit, delete, search, and filter tasks based on their creation date. It also includes a feature to mark tasks as completed by clicking on the task title.
 
-##🚀 Features
+## 🚀 Features
 
-✅ Add Task – Create new tasks quickly and easily.
+ ✅ Add Task – Create new tasks quickly and easily.
 
 📝 Edit Task – Modify existing tasks to update information.
 
