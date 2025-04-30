@@ -21,10 +21,18 @@ A simple and efficient To-Do List application built using modern web technologie
 ✔️ Mark as Completed – Click on a task title to mark it as completed (with visual feedback like a strikethrough).
 
 ## 🛠️ Technologies Used
+
 - HTML
 
 - CSS
 
--JavaScript 
+- JavaScript 
 
 - React.js 
+
+
+## 📦 Installation
+
+1. Clone the repository:
+       ```git clone https://github.com/your-username/todo-app.git
+      cd todo-app```
