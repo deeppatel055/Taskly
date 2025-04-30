@@ -1,0 +1,416 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #d9d7b6;
+    font-size: 16px;
+
+}
+
+@font-face {
+    font-family: 'Kugile_Demo';
+    src: url('../assets/fonts/Kugile_Demo.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Wasted-Vindey';
+    src: url('../assets/fonts/Wasted-Vindey.ttf format') ('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.nav {
+    background-color: #fdfbd4;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.nav-name {
+    font-size: 1.5rem;
+    color: #545333;
+    font-family: 'Kugile_Demo', serif;
+    padding-top: 6px;
+
+}
+
+.search-box {
+    position: relative;
+    width: 250px;
+
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1rem;
+    color: #545333;
+
+}
+
+.search-box input {
+    background-color: #d9d7b6;
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #ccc;
+    font-family: 'Wasted-Vindey', serif;
+    text-transform: capitalize;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #545333;
+    outline: none;
+}
+
+.input-box {
+    background-color: #fdfbd4;
+    border: none;
+    border-radius: 10px;
+    /* width: 40%; */
+    width: 25%;
+    max-width: 600px;
+    min-width: 280px;
+    display: flex;
+    margin: 1rem auto;
+    margin-top: 0.9rem;
+    padding: 1.5rem 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    color: #545333;
+
+
+}
+
+.input-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.input-box form input {
+    background-color: #fdfbd4;
+    border: none;
+    color: #545333;
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    outline: none;
+    font-family: 'Kugile_Demo', serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+.input-box form textarea {
+    background-color: transparent;
+    text-transform: capitalize;
+    font-family: 'Wasted-Vindey', serif;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    color: #545333;
+    width: 100%;
+    scrollbar-width: none;
+}
+
+.input-box form button {
+    align-self: flex-end;
+    color: #d9d7b6;
+    border: none;
+    background-color: #545333;
+    font-size: 1rem;
+    font-family: 'Kugile_Demo', serif;
+    width: auto;
+    font-weight: bold;
+    padding: 0.6rem 1.5rem;
+    padding-top: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.output-box {
+    padding: 10px;
+    margin: 1rem auto;
+    max-width: 1800px;
+}
+.sort{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sort-btn{
+    color: #d9d7b6;
+    border: none;
+    background-color: #545333;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 6px 12px;
+  
+    font-size: 1.2rem;
+    font-family: 'Wasted-Vindey', serif;
+
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.output-box ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.output-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    min-height: 200px;
+    width: 25%;
+    min-width: 280px;
+    max-width: 100%;
+    padding: 1rem;
+    background-color: #fdfbd4;
+    border: none;
+    border-radius: 10px;    
+    word-wrap: break-word;
+    overflow-x: hidden;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+}
+
+.output-content-wrapper {
+   
+    justify-content: space-between;
+    overflow-y: auto;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+    scrollbar-width: none;
+}
+
+.output-content-wrapper .output-title {
+    font-size: 1.5rem;
+    font-family: 'Kugile_Demo', serif;
+    color: #545333;
+    font-weight: bold;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.output-content-wrapper .output-content {
+    font-size: 1rem;
+    font-family: 'Wasted-Vindey', serif;
+    color: #545333;
+    margin-top: 0.5rem;
+    background: transparent;
+    outline: none;
+    resize: none;
+    width: 100%;
+    scrollbar-width: none;
+    border: none;
+
+}
+
+/* .output-buttons {
+      font-family: 'Kugile_Demo', serif;
+    color: #545333;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
+    
+}
+
+.timestamp {
+   
+    font-size: 0.9rem;
+    color: #545333;
+    font-family: 'Wasted-Vindey', serif;
+    text-align: left;
+    flex: 1 1 100%; /* Take full width on small screens */
+    /* text-align: center; Centered for mobile */
+/* } */
+.output-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 1rem;
+    
+    font-family: 'Kugile_Demo', serif;
+    color: #545333;
+    gap: 1rem;
+}
+
+/* Left column: Timestamp */
+.output-footer .timestamp {
+    /* display: flex;
+    flex-direction: column; */
+    align-items: flex-start;
+    font-family: 'Wasted-Vindey', serif;
+    font-size: 0.85rem;
+    color: #545333;
+}
+
+.output-footer .timestamp .date {
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.output-footer .timestamp .time {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Right column: Buttons in vertical row */
+.output-footer .actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* .output-footer .actions button {
+    color: #d9d7b6;
+    background-color: #545333;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 1rem;
+    font-family: 'Kugile_Demo', serif;
+    font-size: 0.85rem;
+    font-size: 0.875rem;
+    font-family: 'Kugile_Demo', serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    } */
+    
+    
+    /* .timestamp .time {
+        font-weight: bold;
+        }
+        
+.timestamp .date {
+    font-size: 0.85rem;
+    opacity: 0.9;
+} */
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.edt-btn,
+.dlt-btn {
+    color: #d9d7b6;
+    padding-top: 5px;
+    border: none;
+    background-color: #545333;
+    font-size: 0.875rem;
+    margin-left: 8px;
+    font-family: 'Kugile_Demo', serif;
+    width: 4rem;
+    height: 2rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #d9d7b6;
+    border-radius: 10px;
+}
+
+/* Responsive */
+
+
+@media (max-width: 1024px) {
+    .input-box .output-list{
+        width: 40%;
+    }
+}
+@media (max-width: 768px) {
+    .nav{
+        flex-direction: column;
+        height: auto;
+        gap: 0.5rem;
+    }
+    
+    .input-box,
+    .output-list{
+        width: 90%;
+    }
+
+    .search-box{
+        width: 80%;
+        margin-top: 0.5rem;
+    }
+
+    .output-box ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .output-buttons{
+        justify-content: center;
+    }
+}
+
+@media  (max-width: 480px) {
+    .nav-name {
+        font-size: 1.2rem;
+    }
+
+    .search-box input{
+        font-size: 0.9rem;
+    }
+
+    .input-box form input,
+    .input-box form textarea {
+        font-size: 1rem;
+    }
+
+    .input-box form button{
+        font-size: 0.9rem;
+        padding: 0.5rem 1.2rem;
+    }
+
+    .edt-btn,
+    .dlt-btn{
+        font-size: 0.75rem;
+        width: 3.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .output-footer {
+        /* flex-direction: column;
+        align-items: stretch; */
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .output-footer .actions {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+}
