@@ -35,7 +35,7 @@ A simple and efficient To-Do List application built using modern web technologie
 
 1. Clone the repository:
    
-       git clone https://github.com/your-username/Taskly.git
+       git clone https://github.com/deeppatel055/Taskly.git
        cd Taskly
 2. Install dependencies:
 
