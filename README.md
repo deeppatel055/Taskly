@@ -19,3 +19,12 @@ A simple and efficient To-Do List application built using modern web technologie
   - Oldest First – View earlier created tasks at the top.
 
 ✔️ Mark as Completed – Click on a task title to mark it as completed (with visual feedback like a strikethrough).
+
+## 🛠️ Technologies Used
+- HTML
+
+- CSS
+
+-JavaScript 
+
+- React.js 
