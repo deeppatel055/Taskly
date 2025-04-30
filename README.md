@@ -37,4 +37,9 @@ A simple and efficient To-Do List application built using modern web technologie
    
        git clone https://github.com/your-username/todo-app.git
        cd todo-app
+2. Install dependencies:
 
+       npm install
+3. Start the development server:
+
+       npm run dev
