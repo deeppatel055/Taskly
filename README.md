@@ -35,11 +35,18 @@ A simple and efficient To-Do List application built using modern web technologie
 
 1. Clone the repository:
    
-       git clone https://github.com/your-username/todo-app.git
-       cd todo-app
+       git clone https://github.com/your-username/Taskly.git
+       cd Taskly
 2. Install dependencies:
 
        npm install
 3. Start the development server:
 
        npm run dev
+## ✨ Future Enhancements
+
+- Save tasks in LocalStorage or connect to a backend
+
+- Responsive design improvements
+
+
