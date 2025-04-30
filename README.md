@@ -14,8 +14,8 @@ A simple and efficient To-Do List application built using modern web technologie
 
 📅 Filter by Creation Date
 
-    Newest First – View recently added tasks at the top.
+  - Newest First – View recently added tasks at the top.
 
-    Oldest First – View earlier created tasks at the top.
+  - Oldest First – View earlier created tasks at the top.
 
 ✔️ Mark as Completed – Click on a task title to mark it as completed (with visual feedback like a strikethrough).
