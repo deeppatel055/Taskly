@@ -34,5 +34,7 @@ A simple and efficient To-Do List application built using modern web technologie
 ## 📦 Installation
 
 1. Clone the repository:
-       ```git clone https://github.com/your-username/todo-app.git
-      cd todo-app```
+   
+       git clone https://github.com/your-username/todo-app.git
+       cd todo-app
+
