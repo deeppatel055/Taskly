@@ -7,7 +7,7 @@ const Navbar = ({searchTodo, setSearchTodo}) => {
 
     <nav className='nav'>
         <div className='nav-name'>
-            <h2>Taskly</h2>
+            <h2>To Do</h2>
         </div>
         <div className='search-box'>
             <span className='search-icon'><FaSearch /></span>
